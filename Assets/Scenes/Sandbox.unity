@@ -112,7 +112,7 @@ NavMeshSettings:
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 23800000, guid: 105cb43520ab09d43b2b68e1717bd2c4, type: 2}
+  m_NavMeshData: {fileID: 0}
 --- !u!1001 &8337810
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -843,7 +843,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 49.75764
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -868,13 +868,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534669902}
-  m_LocalRotation: {x: -0.1330054, y: 0.8438846, z: -0.24479987, w: -0.45852083}
-  m_LocalPosition: {x: 28.901337, y: 13.654472, z: 17.94526}
+  m_LocalRotation: {x: -0.21879728, y: 0.6194776, z: -0.18624283, w: -0.73054016}
+  m_LocalPosition: {x: 32.77, y: 18.95, z: 4.756649}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 33.396, y: -80.573006, z: 0.071}
 --- !u!1 &567638432 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 139386, guid: c2849fd453abd0445a702a035f04ac60,
@@ -1981,7 +1981,7 @@ NavMeshAgent:
   m_AgentTypeID: 0
   m_Radius: 0.5
   m_Speed: 10
-  m_Acceleration: 8
+  m_Acceleration: 20
   avoidancePriority: 50
   m_AngularSpeed: 120
   m_StoppingDistance: 0

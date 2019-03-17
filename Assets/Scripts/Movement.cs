@@ -10,6 +10,20 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GetComponent<NavMeshAgent>().destination = target.position;
+        if(Input.GetMouseButtonDown(0))
+        {
+            MoveToCursor();
+        }
     }
+    private void MoveToCursor()
+    {
+        Ray rayCast = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hitInfo;
+        bool isHit = Physics.Raycast(rayCast, out hitInfo);
+        if (isHit == true)
+        {
+            GetComponent<NavMeshAgent>().destination = hitInfo.point;
+        }
+    }
+
 }
