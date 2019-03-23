@@ -58,6 +58,7 @@
      <Compile Include="Assets\Asset Packs\Supercyan Character Pack Free Sample\Scripts\SimpleCharacterControl.cs" />
      <Compile Include="Assets\Scripts\Movement.cs" />
      <Compile Include="Assets\Scripts\PlayerCamera.cs" />
+     <Compile Include="Assets\Scripts\RandomSky.cs" />
      <None Include="Assets\Asset Packs\SimpleSky\ReadMe.txt" />
      <None Include="Assets\Asset Packs\Synty - Polygon Student Sample\README - Usage Rights for these assets.txt" />
  <Reference Include="Unity.TextMeshPro.Editor">

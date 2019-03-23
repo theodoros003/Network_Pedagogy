@@ -12,7 +12,7 @@ public class Movement : MonoBehaviour
     void Update()
     {
         PrevAnimator();
-        if(Input.GetMouseButtonDown(0))
+        if(Input.GetMouseButton(0))
         {
             MoveToCursor();
         }
@@ -28,6 +28,7 @@ public class Movement : MonoBehaviour
 
     private void MoveToCursor()
     {
+
         Ray rayCast = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hitInfo;
         bool isHit = Physics.Raycast(rayCast, out hitInfo);

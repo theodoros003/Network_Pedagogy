@@ -6,7 +6,7 @@ public class PlayerCamera : MonoBehaviour
 {
     [SerializeField] Transform target;
 
-    void Update()
+    void LateUpdate()
     {
         transform.position = target.position;
     }
