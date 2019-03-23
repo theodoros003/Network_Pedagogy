@@ -7,14 +7,25 @@ public class Movement : MonoBehaviour
 {
     [SerializeField] Transform target;
 
-    // Update is called once per frame
+    bool onGround = true;
+    
     void Update()
     {
+        PrevAnimator();
         if(Input.GetMouseButtonDown(0))
         {
             MoveToCursor();
         }
+        if (Input.GetKey(KeyCode.E))
+        {
+            GetComponent<Animator>().SetTrigger("Wave");
+        }
+        if (Input.GetKey(KeyCode.F))
+        {
+            GetComponent<Animator>().SetTrigger("Pickup");
+        }
     }
+
     private void MoveToCursor()
     {
         Ray rayCast = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -26,4 +37,21 @@ public class Movement : MonoBehaviour
         }
     }
 
+    private void PrevAnimator()
+    {
+        if (onGround == true)
+        {
+            GetComponent<Animator>().SetBool("Grounded", true);
+        }
+        else if (onGround == false)
+        {
+            GetComponent<Animator>().SetBool("Grounded", false);
+        }
+
+        Vector3 velocity = GetComponent<NavMeshAgent>().velocity;
+        Vector3 localVel = transform.InverseTransformDirection(velocity);
+        float speed = localVel.z;
+        GetComponent<Animator>().SetFloat("MoveSpeed", speed);
+    }
+    
 }
