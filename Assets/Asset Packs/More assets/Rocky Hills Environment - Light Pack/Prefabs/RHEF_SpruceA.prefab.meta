@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: c530da61b6361c245b98a06ef4b47bea
+labels:
+- bark
+- pine
+- prefabs
+- spruce
+- tree
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: prefabs
+  assetBundleVariant: 

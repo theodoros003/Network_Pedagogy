@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 4f5bcd313eb42fb4699c4674c0ce1681
+labels:
+- cave
+- cliff
+- dirt
+- prefabs
+- rockgrass
+- rocks
+- smalldetails
+- stones
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: prefabs
+  assetBundleVariant: 
