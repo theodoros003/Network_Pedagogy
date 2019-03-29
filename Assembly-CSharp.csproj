@@ -105,9 +105,9 @@
      <Compile Include="Assets\Asset Packs\More assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Twirl.cs" />
      <Compile Include="Assets\Asset Packs\More assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\VignetteAndChromaticAberration.cs" />
      <Compile Include="Assets\Asset Packs\More assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Vortex.cs" />
-     <Compile Include="Assets\Asset Packs\Supercyan Character Pack Free Sample\Scripts\CameraLogic.cs" />
-     <Compile Include="Assets\Asset Packs\Supercyan Character Pack Free Sample\Scripts\Demo.cs" />
-     <Compile Include="Assets\Asset Packs\Supercyan Character Pack Free Sample\Scripts\SimpleCharacterControl.cs" />
+     <Compile Include="Assets\Asset Packs\Young explorer\Scripts\CameraLogic.cs" />
+     <Compile Include="Assets\Asset Packs\Young explorer\Scripts\Demo.cs" />
+     <Compile Include="Assets\Asset Packs\Young explorer\Scripts\SimpleCharacterControl.cs" />
      <Compile Include="Assets\Scripts\Movement.cs" />
      <Compile Include="Assets\Scripts\PlayerCamera.cs" />
      <Compile Include="Assets\Scripts\RandomSky.cs" />
@@ -157,7 +157,7 @@
      <None Include="Assets\Sketchfab For Unity\Dependencies\Shaders\GLTFBumpToNormal.shader" />
      <None Include="Assets\Asset Packs\More assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\frag_ao.cginc" />
      <None Include="Assets\Asset Packs\More assets\FloatingEntities\Shaders\Ocean.shader" />
-     <None Include="Assets\Asset Packs\Synty - Polygon Student Sample\README - Usage Rights for these assets.txt" />
+     <None Include="Assets\Asset Packs\More assets\Synty - Polygon Student Sample\README - Usage Rights for these assets.txt" />
      <None Include="Assets\Asset Packs\More assets\NatureStarterKit2\Standard Assets\Effects\ToonShading\Shaders\ToonBasicOutline.shader" />
      <None Include="Assets\Asset Packs\More assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfField34.shader" />
      <None Include="Assets\Asset Packs\More assets\BodyGuards\ReadMe.txt.txt" />
