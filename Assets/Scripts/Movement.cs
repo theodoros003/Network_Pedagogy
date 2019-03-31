@@ -7,6 +7,8 @@ public class Movement : MonoBehaviour
 {
     [SerializeField] Transform target;
 
+    public LayerMask movementMask;
+    
     bool onGround = true;
     
     void Update()
@@ -28,10 +30,9 @@ public class Movement : MonoBehaviour
 
     private void MoveToCursor()
     {
-
         Ray rayCast = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hitInfo;
-        bool isHit = Physics.Raycast(rayCast, out hitInfo);
+        bool isHit = Physics.Raycast(rayCast, out hitInfo, 100, movementMask);
         if (isHit == true)
         {
             GetComponent<NavMeshAgent>().destination = hitInfo.point;
