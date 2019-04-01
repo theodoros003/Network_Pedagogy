@@ -67,6 +67,8 @@
      <Compile Include="Assets\Asset Packs\More assets\NatureStarterKit2\Editor\ImageEffects\SunShaftsEditor.cs" />
      <Compile Include="Assets\Asset Packs\More assets\NatureStarterKit2\Editor\ImageEffects\TonemappingEditor.cs" />
      <Compile Include="Assets\Asset Packs\More assets\NatureStarterKit2\Editor\ImageEffects\VignetteAndChromaticAberrationEditor.cs" />
+     <Compile Include="Assets\RTS_Camera\Scripts\Editor\LayoutHelpers.cs" />
+     <Compile Include="Assets\RTS_Camera\Scripts\Editor\RTS_CameraEditor.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Users/Theodoros/Unity Push/Network_Pedagogy/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>

@@ -66,7 +66,6 @@
      <Compile Include="Assets\Asset Packs\More assets\FloatingEntities\Scripts\PropellerBoats.cs" />
      <Compile Include="Assets\Asset Packs\More assets\FloatingEntities\Scripts\SplashGenerator.cs" />
      <Compile Include="Assets\Asset Packs\More assets\FloatingEntities\Scripts\Tools\Proxies.cs" />
-     <Compile Include="Assets\Asset Packs\More assets\FloatingEntities\Scripts\WakeGenerator.cs" />
      <Compile Include="Assets\Asset Packs\More assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Antialiasing.cs" />
      <Compile Include="Assets\Asset Packs\More assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Bloom.cs" />
      <Compile Include="Assets\Asset Packs\More assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\BloomAndFlares.cs" />
@@ -108,7 +107,12 @@
      <Compile Include="Assets\Asset Packs\Young explorer\Scripts\CameraLogic.cs" />
      <Compile Include="Assets\Asset Packs\Young explorer\Scripts\Demo.cs" />
      <Compile Include="Assets\Asset Packs\Young explorer\Scripts\SimpleCharacterControl.cs" />
+     <Compile Include="Assets\RTS_Camera\Demo\DemoScene.cs" />
+     <Compile Include="Assets\RTS_Camera\Demo\TargetSelector.cs" />
+     <Compile Include="Assets\RTS_Camera\Scripts\RTS_Camera.cs" />
+     <Compile Include="Assets\Scripts\Interractions.cs" />
      <Compile Include="Assets\Scripts\Movement.cs" />
+     <Compile Include="Assets\Scripts\MovementPoint.cs" />
      <Compile Include="Assets\Scripts\PlayerCamera.cs" />
      <Compile Include="Assets\Scripts\RandomSky.cs" />
      <Compile Include="Assets\Sketchfab For Unity\Scripts\AssetBrowser\SketchfabBrowserManager.cs" />
