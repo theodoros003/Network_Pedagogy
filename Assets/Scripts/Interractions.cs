@@ -3,6 +3,7 @@
 public class Interractions : MonoBehaviour
 {
     public float radius = 3f;
+    public Transform interaction;
 
     bool isFocus = false;
     Transform player;
@@ -12,17 +13,17 @@ public class Interractions : MonoBehaviour
     public virtual void Interact()
     {
         // This method is meant to be overwritten
-        Debug.Log ("Interracting with " + transform.name);
+        Debug.Log ("Interracting with an " + transform.name);
     }
 
     void Update() 
     {
         if (isFocus && !hasInteracted)
         {
-            float distance = Vector3.Distance(player.position, transform.position);
+            float distance = Vector3.Distance(player.position, interaction.position);
             if (distance <= radius)
             {
-                Debug.Log ("Interact");
+                Interact();
                 hasInteracted = true;
             }
         }    
@@ -43,8 +44,13 @@ public class Interractions : MonoBehaviour
 
     void OnDrawGizmosSelected() 
     {
+        if (interaction == null)
+        {
+            interaction = transform;
+        }
+
         Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, radius);
+        Gizmos.DrawWireSphere(interaction.position, radius);
     }
 
 

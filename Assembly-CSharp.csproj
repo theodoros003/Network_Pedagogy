@@ -104,28 +104,31 @@
      <Compile Include="Assets\Asset Packs\More assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Twirl.cs" />
      <Compile Include="Assets\Asset Packs\More assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\VignetteAndChromaticAberration.cs" />
      <Compile Include="Assets\Asset Packs\More assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Vortex.cs" />
+     <Compile Include="Assets\Asset Packs\Sketchfab For Unity\Scripts\AssetBrowser\SketchfabBrowserManager.cs" />
+     <Compile Include="Assets\Asset Packs\Sketchfab For Unity\Scripts\AssetBrowser\SketchfabBrowserWindow.cs" />
+     <Compile Include="Assets\Asset Packs\Sketchfab For Unity\Scripts\AssetBrowser\SketchfabModelWindow.cs" />
+     <Compile Include="Assets\Asset Packs\Sketchfab For Unity\Scripts\Resizer.cs" />
+     <Compile Include="Assets\Asset Packs\Sketchfab For Unity\Scripts\SketchfabApi.cs" />
+     <Compile Include="Assets\Asset Packs\Sketchfab For Unity\Scripts\SketchfabExporter.cs" />
+     <Compile Include="Assets\Asset Packs\Sketchfab For Unity\Scripts\SketchfabImporter.cs" />
+     <Compile Include="Assets\Asset Packs\Sketchfab For Unity\Scripts\SketchfabImporterWindow.cs" />
+     <Compile Include="Assets\Asset Packs\Sketchfab For Unity\Scripts\SketchfabLogger.cs" />
+     <Compile Include="Assets\Asset Packs\Sketchfab For Unity\Scripts\SketchfabPlugin.cs" />
+     <Compile Include="Assets\Asset Packs\Sketchfab For Unity\Scripts\SketchfabUI.cs" />
      <Compile Include="Assets\Asset Packs\Young explorer\Scripts\CameraLogic.cs" />
      <Compile Include="Assets\Asset Packs\Young explorer\Scripts\Demo.cs" />
      <Compile Include="Assets\Asset Packs\Young explorer\Scripts\SimpleCharacterControl.cs" />
-     <Compile Include="Assets\RTS_Camera\Demo\DemoScene.cs" />
-     <Compile Include="Assets\RTS_Camera\Demo\TargetSelector.cs" />
-     <Compile Include="Assets\RTS_Camera\Scripts\RTS_Camera.cs" />
+     <Compile Include="Assets\Scripts\AddButton.cs" />
+     <Compile Include="Assets\Scripts\Animations.cs" />
      <Compile Include="Assets\Scripts\Interractions.cs" />
+     <Compile Include="Assets\Scripts\Inventory\Inventory.cs" />
+     <Compile Include="Assets\Scripts\Inventory\InventorySlot.cs" />
+     <Compile Include="Assets\Scripts\Inventory\InventoryUI.cs" />
+     <Compile Include="Assets\Scripts\Items\Item.cs" />
+     <Compile Include="Assets\Scripts\Items\Loot.cs" />
      <Compile Include="Assets\Scripts\Movement.cs" />
-     <Compile Include="Assets\Scripts\MovementPoint.cs" />
+     <Compile Include="Assets\Scripts\MoveToPoint.cs" />
      <Compile Include="Assets\Scripts\PlayerCamera.cs" />
-     <Compile Include="Assets\Scripts\RandomSky.cs" />
-     <Compile Include="Assets\Sketchfab For Unity\Scripts\AssetBrowser\SketchfabBrowserManager.cs" />
-     <Compile Include="Assets\Sketchfab For Unity\Scripts\AssetBrowser\SketchfabBrowserWindow.cs" />
-     <Compile Include="Assets\Sketchfab For Unity\Scripts\AssetBrowser\SketchfabModelWindow.cs" />
-     <Compile Include="Assets\Sketchfab For Unity\Scripts\Resizer.cs" />
-     <Compile Include="Assets\Sketchfab For Unity\Scripts\SketchfabApi.cs" />
-     <Compile Include="Assets\Sketchfab For Unity\Scripts\SketchfabExporter.cs" />
-     <Compile Include="Assets\Sketchfab For Unity\Scripts\SketchfabImporter.cs" />
-     <Compile Include="Assets\Sketchfab For Unity\Scripts\SketchfabImporterWindow.cs" />
-     <Compile Include="Assets\Sketchfab For Unity\Scripts\SketchfabLogger.cs" />
-     <Compile Include="Assets\Sketchfab For Unity\Scripts\SketchfabPlugin.cs" />
-     <Compile Include="Assets\Sketchfab For Unity\Scripts\SketchfabUI.cs" />
      <None Include="Assets\Asset Packs\More assets\NatureStarterKit2\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\Asset Packs\More assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
      <None Include="Assets\Asset Packs\More assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderRGB.shader" />
@@ -145,7 +148,7 @@
      <None Include="Assets\Asset Packs\More assets\NatureStarterKit2\info.txt" />
      <None Include="Assets\Asset Packs\More assets\NatureStarterKit2\Standard Assets\Effects\TessellationShaders\Shaders\BumpedSpecularSmooth.shader" />
      <None Include="Assets\Asset Packs\More assets\NatureStarterKit2\Standard Assets\Effects\Projectors\Guidelines.txt" />
-     <None Include="Assets\Sketchfab For Unity\Dependencies\Shaders\GLTFLinear2sRGB.shader" />
+     <None Include="Assets\Asset Packs\Sketchfab For Unity\Dependencies\Shaders\GLTFLinear2sRGB.shader" />
      <None Include="Assets\Asset Packs\More assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\MotionBlur.shader" />
      <None Include="Assets\Asset Packs\More assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MobileBloom.shader" />
      <None Include="Assets\Asset Packs\More assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\MinMaxReduction.shader" />
@@ -158,7 +161,7 @@
      <None Include="Assets\Asset Packs\More assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAAPreset3.shader" />
      <None Include="Assets\Asset Packs\More assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\FisheyeShader.shader" />
      <None Include="Assets\Asset Packs\More assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\Apply.shader" />
-     <None Include="Assets\Sketchfab For Unity\Dependencies\Shaders\GLTFBumpToNormal.shader" />
+     <None Include="Assets\Asset Packs\Sketchfab For Unity\Dependencies\Shaders\GLTFBumpToNormal.shader" />
      <None Include="Assets\Asset Packs\More assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\frag_ao.cginc" />
      <None Include="Assets\Asset Packs\More assets\FloatingEntities\Shaders\Ocean.shader" />
      <None Include="Assets\Asset Packs\More assets\Synty - Polygon Student Sample\README - Usage Rights for these assets.txt" />
@@ -172,7 +175,7 @@
      <None Include="Assets\Asset Packs\More assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderYUV.shader" />
      <None Include="Assets\Asset Packs\More assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\CreaseApply.shader" />
      <None Include="Assets\Asset Packs\More assets\VertexColorFarmAnimals\Shaders\VertexColorUnlit.shader" />
-     <None Include="Assets\Sketchfab For Unity\Dependencies\Shaders\GLTFColorSpace.cginc" />
+     <None Include="Assets\Asset Packs\Sketchfab For Unity\Dependencies\Shaders\GLTFColorSpace.cginc" />
      <None Include="Assets\Asset Packs\More assets\tractor and planter\readme.txt" />
      <None Include="Assets\Asset Packs\More assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\ChromaticAberrationShader.shader" />
      <None Include="Assets\Asset Packs\More assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\GlobalFog.shader" />
@@ -190,7 +193,7 @@
      <None Include="Assets\Asset Packs\More assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\CameraMotionBlur.shader" />
      <None Include="Assets\Asset Packs\More assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\DLAA.shader" />
      <None Include="Assets\Asset Packs\More assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\NoiseAndGrainDX11.shader" />
-     <None Include="Assets\Sketchfab For Unity\Dependencies\Shaders\GLTFFlipTexture.shader" />
+     <None Include="Assets\Asset Packs\Sketchfab For Unity\Dependencies\Shaders\GLTFFlipTexture.shader" />
      <None Include="Assets\Asset Packs\More assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BrightPassFilter2.shader" />
      <None Include="Assets\Asset Packs\More assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\SeparableBlur.shader" />
      <None Include="Assets\Asset Packs\More assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\MotionBlurClear.shader" />
@@ -204,7 +207,7 @@
      <None Include="Assets\Asset Packs\More assets\NatureStarterKit2\Standard Assets\Effects\Projectors\Shaders\ProjectorMultiply.shader" />
      <None Include="Assets\Asset Packs\More assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\VignettingShader.shader" />
      <None Include="Assets\Asset Packs\More assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\Tonemapper.shader" />
-     <None Include="Assets\Sketchfab For Unity\Dependencies\Shaders\GLTFPackOccMetalRough.shader" />
+     <None Include="Assets\Asset Packs\Sketchfab For Unity\Dependencies\Shaders\GLTFPackOccMetalRough.shader" />
      <None Include="Assets\Asset Packs\More assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BrightPassFilter.shader" />
      <None Include="Assets\Asset Packs\More assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAA2.shader" />
      <None Include="Assets\Asset Packs\More assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrection3DLut.shader" />
@@ -439,16 +442,16 @@
  <HintPath>C:/Users/Theodoros/Unity Push/Network_Pedagogy/Assets/Asset Packs/More assets/FloatingEntities/Scripts/ArchimedsLab.dll</HintPath>
  </Reference>
  <Reference Include="GLTFSerialization">
- <HintPath>C:/Users/Theodoros/Unity Push/Network_Pedagogy/Assets/Sketchfab For Unity/Dependencies/Libraries/GLTFSerialization.dll</HintPath>
+ <HintPath>C:/Users/Theodoros/Unity Push/Network_Pedagogy/Assets/Asset Packs/Sketchfab For Unity/Dependencies/Libraries/GLTFSerialization.dll</HintPath>
  </Reference>
  <Reference Include="Ionic.Zip.Unity">
- <HintPath>C:/Users/Theodoros/Unity Push/Network_Pedagogy/Assets/Sketchfab For Unity/Dependencies/Libraries/Ionic.Zip.Unity.dll</HintPath>
+ <HintPath>C:/Users/Theodoros/Unity Push/Network_Pedagogy/Assets/Asset Packs/Sketchfab For Unity/Dependencies/Libraries/Ionic.Zip.Unity.dll</HintPath>
  </Reference>
  <Reference Include="Newtonsoft.Json">
- <HintPath>C:/Users/Theodoros/Unity Push/Network_Pedagogy/Assets/Sketchfab For Unity/Dependencies/Libraries/Newtonsoft.Json.dll</HintPath>
+ <HintPath>C:/Users/Theodoros/Unity Push/Network_Pedagogy/Assets/Asset Packs/Sketchfab For Unity/Dependencies/Libraries/Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="UnityGLTF">
- <HintPath>C:/Users/Theodoros/Unity Push/Network_Pedagogy/Assets/Sketchfab For Unity/Dependencies/Libraries/UnityGLTF.dll</HintPath>
+ <HintPath>C:/Users/Theodoros/Unity Push/Network_Pedagogy/Assets/Asset Packs/Sketchfab For Unity/Dependencies/Libraries/UnityGLTF.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Editor">
  <HintPath>C:/Users/Theodoros/Unity Push/Network_Pedagogy/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>

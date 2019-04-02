@@ -1,25 +1,27 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using UnityEngine.EventSystems;
 using UnityEngine;
 using UnityEngine.AI;
 
-[RequireComponent(typeof(MovementPoint))]
+[RequireComponent(typeof(MoveToPoint))]
 public class Movement : MonoBehaviour
 {   
     public LayerMask movementMask;
     public Interractions focus;
     
-    bool onGround = true;
-    MovementPoint point;
+    MoveToPoint point;
     
     void Start() 
     {
-        point = GetComponent<MovementPoint>();
+        point = GetComponent<MoveToPoint>();
     }
+
     void Update()
     {
-        PrevAnimator();
-        if(Input.GetMouseButtonDown(0) || Input.GetKey(KeyCode.W))
+        if (EventSystem.current.IsPointerOverGameObject())
+        {
+            return;
+        }
+        if (Input.GetMouseButtonDown(0) || Input.GetKey(KeyCode.W))
         {
             MoveToCursor();
             RemoveFocus();
@@ -45,9 +47,10 @@ public class Movement : MonoBehaviour
         bool isHit = Physics.Raycast(rayCast, out hitInfo, 100, movementMask);
         if (isHit == true)
         {
-            point.MoveToPoint(hitInfo.point);
+            point.ToPoint(hitInfo.point);
         }
     }
+
     private void ClickToObjects()
     {
         Ray rayCast = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -62,6 +65,7 @@ public class Movement : MonoBehaviour
             }
         }
     }
+
     void SetFocus (Interractions newFocus)
     {
         if (newFocus != null)
@@ -75,8 +79,8 @@ public class Movement : MonoBehaviour
         }
         
         newFocus.OnFocused(transform);
-        
     }
+
     void RemoveFocus ()
     {
         if (focus != null)
@@ -87,21 +91,4 @@ public class Movement : MonoBehaviour
         point.StopFollowObject();
     }
 
-    private void PrevAnimator()
-    {
-        if (onGround == true)
-        {
-            GetComponent<Animator>().SetBool("Grounded", true);
-        }
-        else if (onGround == false)
-        {
-            GetComponent<Animator>().SetBool("Grounded", false);
-        }
-
-        Vector3 velocity = GetComponent<NavMeshAgent>().velocity;
-        Vector3 localVel = transform.InverseTransformDirection(velocity);
-        float speed = localVel.z;
-        GetComponent<Animator>().SetFloat("MoveSpeed", speed);
-    }
-    
 }
