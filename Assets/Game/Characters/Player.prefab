@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 1347643175}
   - component: {fileID: 1347643176}
   - component: {fileID: 1550484882}
+  - component: {fileID: 1347643181}
+  - component: {fileID: 1347643182}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -93,7 +95,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 2
+  m_Height: 1.65
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -142,10 +144,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
+  m_Radius: 0.3681524
+  m_Height: 1.6439916
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: -0.17800458, z: -0.028310265}
 --- !u!114 &1550484882
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,6 +164,30 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   focus: {fileID: 0}
+--- !u!114 &1347643181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6758190384287319469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebcd5be35e6bc8743aea98bd186beb3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1347643182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6758190384287319469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52e2c777925803d4b9b3565d1f3315db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &86610156236755949
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -169,37 +195,33 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 328136589237339770}
     m_Modifications:
-    - target: {fileID: 100000, guid: 9ddea35ce836f644785979a765a4df7a, type: 3}
-      propertyPath: m_Name
-      value: Bag
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9ddea35ce836f644785979a765a4df7a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9ddea35ce836f644785979a765a4df7a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.59
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9ddea35ce836f644785979a765a4df7a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.201
+      value: -0.205
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9ddea35ce836f644785979a765a4df7a, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.008500338
+      value: 0.017788094
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9ddea35ce836f644785979a765a4df7a, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.70705575
+      value: -0.7068831
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9ddea35ce836f644785979a765a4df7a, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.008500338
+      value: -0.017788094
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9ddea35ce836f644785979a765a4df7a, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.70705575
+      value: 0.7068831
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9ddea35ce836f644785979a765a4df7a, type: 3}
       propertyPath: m_RootOrder
@@ -215,7 +237,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9ddea35ce836f644785979a765a4df7a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -1.378
+      value: -2.8830001
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9ddea35ce836f644785979a765a4df7a, type: 3}
       propertyPath: m_LocalScale.x
@@ -228,6 +250,10 @@ PrefabInstance:
     - target: {fileID: 400000, guid: 9ddea35ce836f644785979a765a4df7a, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.30132768
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9ddea35ce836f644785979a765a4df7a, type: 3}
+      propertyPath: m_Name
+      value: Bag
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 9ddea35ce836f644785979a765a4df7a, type: 3}
       propertyPath: m_Materials.Array.data[0]
