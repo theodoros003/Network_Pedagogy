@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e884c8af2e55704880d1dd0e1382eb2, type: 3}
   m_Name: Router
   m_EditorClassIdentifier: 
-  name: PlaceHolderRouter
-  icon: {fileID: 21300000, guid: a99bdd16452a1e04fbabc1f5c4662434, type: 3}
+  name: Router
+  icon: {fileID: 21300000, guid: 6fb26c8a152e69546aa3c36d3c69f592, type: 3}
   isDefaultItem: 0

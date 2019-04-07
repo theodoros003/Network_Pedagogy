@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e884c8af2e55704880d1dd0e1382eb2, type: 3}
   m_Name: Server
   m_EditorClassIdentifier: 
-  name: PlaceHolderServer
-  icon: {fileID: 21300000, guid: 0c7f160db5d4d064d9a49d8915a3365c, type: 3}
+  name: Server
+  icon: {fileID: 21300000, guid: 6fe0b4df383cf5045b583df904990c25, type: 3}
   isDefaultItem: 0

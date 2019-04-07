@@ -21,7 +21,7 @@ public class Movement : MonoBehaviour
         {
             return;
         }
-        if (Input.GetMouseButtonDown(0) || Input.GetKey(KeyCode.W))
+        if (Input.GetMouseButtonDown(0))
         {
             MoveToCursor();
             RemoveFocus();
