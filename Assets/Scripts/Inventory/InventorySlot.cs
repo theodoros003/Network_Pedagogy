@@ -5,6 +5,7 @@ public class InventorySlot : MonoBehaviour
 {
     public Image icon;
     public Button removeButton;
+    public Text itemInfo;
 
     Item item;
 
@@ -37,6 +38,21 @@ public class InventorySlot : MonoBehaviour
         {
             item.Use();
         }
+    }
+
+    public void mouseOverText()
+    {
+        if (item != null)
+        {
+            itemInfo.enabled = true;
+            itemInfo.text = item.name;
+            Debug.Log("mouse over");
+        }
+    }
+
+    public void mouseExitText()
+    {
+        itemInfo.enabled = false;
     }
 
 }

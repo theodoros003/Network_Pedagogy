@@ -17,7 +17,9 @@ public class Loot : Interractions
         bool wasCollected = Inventory.instance.AddItem(item);
         if (wasCollected)
         {
+            
             Destroy(gameObject);
         }
     }
+
 }

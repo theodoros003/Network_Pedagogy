@@ -12,8 +12,7 @@ public class Interractions : MonoBehaviour
 
     public virtual void Interact()
     {
-        // This method is meant to be overwritten
-        Debug.Log ("Interracting with an " + transform.name);
+        Debug.Log ("Interracting with " + transform.name);
     }
 
     void Update() 
