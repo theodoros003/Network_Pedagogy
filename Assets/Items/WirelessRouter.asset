@@ -13,5 +13,4 @@ MonoBehaviour:
   m_Name: WirelessRouter
   m_EditorClassIdentifier: 
   name: Wireless Router
-  icon: {fileID: 21300000, guid: 3fcf6f287cd434148a84bb20cdcdac97, type: 3}
-  isDefaultItem: 0
+  icon: {fileID: 21300000, guid: c61ceb460f8ca9a4a9c5ce150b5c690c, type: 3}

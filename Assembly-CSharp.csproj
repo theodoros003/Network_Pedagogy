@@ -115,6 +115,12 @@
      <Compile Include="Assets\Asset Packs\Sketchfab For Unity\Scripts\SketchfabLogger.cs" />
      <Compile Include="Assets\Asset Packs\Sketchfab For Unity\Scripts\SketchfabPlugin.cs" />
      <Compile Include="Assets\Asset Packs\Sketchfab For Unity\Scripts\SketchfabUI.cs" />
+     <Compile Include="Assets\Asset Packs\Terminal\WM2000\Display\Display.cs" />
+     <Compile Include="Assets\Asset Packs\Terminal\WM2000\Keyboard\Keyboard.cs" />
+     <Compile Include="Assets\Asset Packs\Terminal\WM2000\Terminal\DisplayBuffer.cs" />
+     <Compile Include="Assets\Asset Packs\Terminal\WM2000\Terminal\InputBuffer.cs" />
+     <Compile Include="Assets\Asset Packs\Terminal\WM2000\Terminal\Terminal.cs" />
+     <Compile Include="Assets\Asset Packs\Terminal\WM2000\Utility.cs" />
      <Compile Include="Assets\Asset Packs\Young explorer\Scripts\CameraLogic.cs" />
      <Compile Include="Assets\Asset Packs\Young explorer\Scripts\Demo.cs" />
      <Compile Include="Assets\Asset Packs\Young explorer\Scripts\SimpleCharacterControl.cs" />
@@ -129,6 +135,7 @@
      <Compile Include="Assets\Scripts\Movement.cs" />
      <Compile Include="Assets\Scripts\MoveToPoint.cs" />
      <Compile Include="Assets\Scripts\PlayerCamera.cs" />
+     <Compile Include="Assets\Scripts\TerminalUI.cs" />
      <None Include="Assets\Asset Packs\More assets\NatureStarterKit2\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\Asset Packs\More assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
      <None Include="Assets\Asset Packs\More assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderRGB.shader" />

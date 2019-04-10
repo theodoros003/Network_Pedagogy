@@ -13,5 +13,4 @@ MonoBehaviour:
   m_Name: PC
   m_EditorClassIdentifier: 
   name: PC
-  icon: {fileID: 21300000, guid: 4a9a8bc07b8335f448490be6138de11d, type: 3}
-  isDefaultItem: 0
+  icon: {fileID: 21300000, guid: 13922a250c6dd9348a7683dda3a4e772, type: 3}

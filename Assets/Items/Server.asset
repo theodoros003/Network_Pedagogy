@@ -13,5 +13,4 @@ MonoBehaviour:
   m_Name: Server
   m_EditorClassIdentifier: 
   name: Server
-  icon: {fileID: 21300000, guid: 6fe0b4df383cf5045b583df904990c25, type: 3}
-  isDefaultItem: 0
+  icon: {fileID: 21300000, guid: 4b4a7c4598e5ce749a85390e519769e3, type: 3}

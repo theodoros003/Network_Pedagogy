@@ -7,6 +7,9 @@ public class InventorySlot : MonoBehaviour
     public Button removeButton;
     public Text itemInfo;
 
+    public GameObject note1;
+    public GameObject note2;
+
     Item item;
 
     public void AddItem (Item newItem)
@@ -36,6 +39,14 @@ public class InventorySlot : MonoBehaviour
     {
         if (item != null)
         {
+            if(item.name == "Note 1")
+            {
+                note1.SetActive(!note1.activeSelf);
+            }
+            if (item.name == "Note 2")
+            {
+                note2.SetActive(!note2.activeSelf);
+            }
             item.Use();
         }
     }

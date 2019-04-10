@@ -113,7 +113,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -3.8}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 75, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5644608158154117803
@@ -291,6 +291,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5644608159396791872}
   - component: {fileID: 2039332006}
+  - component: {fileID: 5644608159396791874}
   m_Layer: 5
   m_Name: InventorySlot
   m_TagString: Untagged
@@ -335,6 +336,16 @@ MonoBehaviour:
   icon: {fileID: 5644608158154117800}
   removeButton: {fileID: 5644608159079119418}
   itemInfo: {fileID: 917411491}
+  note1: {fileID: 0}
+  note2: {fileID: 0}
+--- !u!222 &5644608159396791874
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5644608159396791873}
+  m_CullTransparentMesh: 0
 --- !u!1 &5644608159544253473
 GameObject:
   m_ObjectHideFlags: 0
