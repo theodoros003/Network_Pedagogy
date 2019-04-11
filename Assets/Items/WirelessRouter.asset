@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e884c8af2e55704880d1dd0e1382eb2, type: 3}
   m_Name: WirelessRouter
   m_EditorClassIdentifier: 
-  name: Wireless Router
+  name: WRouter
   icon: {fileID: 21300000, guid: c61ceb460f8ca9a4a9c5ce150b5c690c, type: 3}
