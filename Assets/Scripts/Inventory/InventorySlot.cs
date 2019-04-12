@@ -12,6 +12,11 @@ public class InventorySlot : MonoBehaviour
 
     Item item;
 
+    public float radius = 4f;
+    public bool inRange = false;
+    public Transform player;
+    public Transform interaction;
+
     public void AddItem (Item newItem)
     {
         item = newItem;
@@ -37,9 +42,22 @@ public class InventorySlot : MonoBehaviour
 
     public void UseItem ()
     {
+        float distance = Vector3.Distance(player.position, interaction.position);
+        if (distance <= radius)
+        {
+            inRange = true;
+        }
+        else
+        {
+            inRange = false;
+        }
         if (item != null)
         {
-            if(item.name == "Note 1")
+            if (inRange == true)
+            {
+                Debug.Log("working");
+            }
+            if (item.name == "Note 1")
             {
                 note1.SetActive(!note1.activeSelf);
             }

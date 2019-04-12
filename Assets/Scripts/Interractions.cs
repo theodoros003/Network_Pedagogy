@@ -14,7 +14,7 @@ public class Interractions : MonoBehaviour
     {
         Debug.Log ("Interracting with " + transform.name);
     }
-
+    
     void Update() 
     {
         if (isFocus && !hasInteracted)
@@ -25,7 +25,7 @@ public class Interractions : MonoBehaviour
                 Interact();
                 hasInteracted = true;
             }
-        }    
+        }
     }
     public void OnFocused (Transform playerTransform)
     {
@@ -51,6 +51,5 @@ public class Interractions : MonoBehaviour
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(interaction.position, radius);
     }
-
 
 }

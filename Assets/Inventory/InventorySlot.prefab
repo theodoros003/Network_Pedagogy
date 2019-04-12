@@ -338,6 +338,10 @@ MonoBehaviour:
   itemInfo: {fileID: 917411491}
   note1: {fileID: 0}
   note2: {fileID: 0}
+  radius: 3
+  inRange: 0
+  player: {fileID: 0}
+  interaction: {fileID: 0}
 --- !u!222 &5644608159396791874
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -23,7 +23,7 @@ public class Inventory : MonoBehaviour
 
     public delegate void OnItemChanged();
     public OnItemChanged onItemChangedCallback;
-
+    
     public int space = 16;
 
     public List<Item> items = new List<Item>();
