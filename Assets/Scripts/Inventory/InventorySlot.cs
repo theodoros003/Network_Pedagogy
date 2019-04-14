@@ -69,7 +69,7 @@ public class InventorySlot : MonoBehaviour
         }
         if (item != null && item.isNote == false && inRange == false)
         {
-            StartCoroutine(message1());
+            StartCoroutine(outOfRangeMessage());
         }
     }
 
@@ -78,19 +78,20 @@ public class InventorySlot : MonoBehaviour
         if (item.name == "Server")
         {
             server.SetActive(true);
-            StartCoroutine(message2());
+            StartCoroutine(succUseMessage());
             OnRemoveButton();
         }
     }
 
-    IEnumerator message1()
+    IEnumerator outOfRangeMessage()
     {
         rangeMessage.SetActive(true);
         yield return new WaitForSeconds(1);
         rangeMessage.SetActive(false);
     }
-    IEnumerator message2()
+    IEnumerator succUseMessage()
     {
+        item.Use();
         itemMessage = succMessage.GetComponent<Text>();
         itemMessage.text = item.message;
         succMessage.SetActive(true);
