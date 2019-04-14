@@ -336,12 +336,15 @@ MonoBehaviour:
   icon: {fileID: 5644608158154117800}
   removeButton: {fileID: 5644608159079119418}
   itemInfo: {fileID: 917411491}
-  note1: {fileID: 0}
-  note2: {fileID: 0}
-  radius: 3
+  notes: {fileID: 0}
+  noteText: {fileID: 0}
+  radius: 20
   inRange: 0
   player: {fileID: 0}
   interaction: {fileID: 0}
+  rangeMessage: {fileID: 0}
+  succMessage: {fileID: 0}
+  server: {fileID: 0}
 --- !u!222 &5644608159396791874
 CanvasRenderer:
   m_ObjectHideFlags: 0

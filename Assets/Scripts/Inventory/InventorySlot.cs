@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
 
 public class InventorySlot : MonoBehaviour
 {
@@ -7,17 +8,23 @@ public class InventorySlot : MonoBehaviour
     public Button removeButton;
     public Text itemInfo;
 
-    public GameObject note1;
-    public GameObject note2;
-
     Item item;
 
-    public float radius = 4f;
+    public GameObject notes;
+    public GameObject noteText;
+
+    public float radius = 20f;
     public bool inRange = false;
     public Transform player;
     public Transform interaction;
 
-    public void AddItem (Item newItem)
+    public GameObject rangeMessage;
+    public GameObject succMessage = null;
+    private Text itemMessage;
+    private Text itemNote;
+    public GameObject server;
+
+    public void AddItem(Item newItem)
     {
         item = newItem;
 
@@ -26,7 +33,7 @@ public class InventorySlot : MonoBehaviour
         removeButton.interactable = true;
     }
 
-    public void ClearSlot ()
+    public void ClearSlot()
     {
         item = null;
 
@@ -40,7 +47,7 @@ public class InventorySlot : MonoBehaviour
         Inventory.instance.RemoveItem(item);
     }
 
-    public void UseItem ()
+    public void UseItem()
     {
         float distance = Vector3.Distance(player.position, interaction.position);
         if (distance <= radius)
@@ -51,25 +58,54 @@ public class InventorySlot : MonoBehaviour
         {
             inRange = false;
         }
-        if (item != null)
+
+        if (item != null && inRange == true)
         {
-            if (inRange == true)
-            {
-                Debug.Log("working");
-            }
-            if (item.name == "Note 1")
-            {
-                note1.SetActive(!note1.activeSelf);
-            }
-            if (item.name == "Note 2")
-            {
-                note2.SetActive(!note2.activeSelf);
-            }
-            item.Use();
+            insiteLab();
+        }
+        if (item != null && item.isNote == true)
+        {
+            openNotes();
+        }
+        if (item != null && item.isNote == false && inRange == false)
+        {
+            StartCoroutine(message1());
         }
     }
 
-    public void mouseOverText()
+    void insiteLab()
+    {
+        if (item.name == "Server")
+        {
+            server.SetActive(true);
+            StartCoroutine(message2());
+            OnRemoveButton();
+        }
+    }
+
+    IEnumerator message1()
+    {
+        rangeMessage.SetActive(true);
+        yield return new WaitForSeconds(1);
+        rangeMessage.SetActive(false);
+    }
+    IEnumerator message2()
+    {
+        itemMessage = succMessage.GetComponent<Text>();
+        itemMessage.text = item.message;
+        succMessage.SetActive(true);
+        yield return new WaitForSeconds(2);
+        succMessage.SetActive(false);
+    }
+
+    void openNotes()
+    {
+        itemNote = noteText.GetComponent<Text>();
+        itemNote.text = item.noteContent;
+        notes.SetActive(!notes.activeSelf);
+    }
+
+    void mouseOverText()
     {
         if (item != null)
         {
@@ -79,7 +115,7 @@ public class InventorySlot : MonoBehaviour
         }
     }
 
-    public void mouseExitText()
+    void mouseExitText()
     {
         itemInfo.enabled = false;
     }
