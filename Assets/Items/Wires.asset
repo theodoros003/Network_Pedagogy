@@ -10,8 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3e884c8af2e55704880d1dd0e1382eb2, type: 3}
-  m_Name: Router
+  m_Name: Wires
   m_EditorClassIdentifier: 
-  name: Router
-  icon: {fileID: 21300000, guid: 6fb26c8a152e69546aa3c36d3c69f592, type: 3}
-  isDefaultItem: 0
+  name: Wires
+  icon: {fileID: 21300000, guid: 4de2b2111dff0364da72251b86e1e19c, type: 3}
+  isNote: 0
+  noteContent: 
+  message: You have successfully added the Wires

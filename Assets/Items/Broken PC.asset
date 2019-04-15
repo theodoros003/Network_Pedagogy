@@ -10,8 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3e884c8af2e55704880d1dd0e1382eb2, type: 3}
-  m_Name: Switch
+  m_Name: Broken PC
   m_EditorClassIdentifier: 
-  name: Switch
-  icon: {fileID: 21300000, guid: 1cb5c7cd274f55f4092b372578d77e1b, type: 3}
-  isDefaultItem: 0
+  name: Broken PCs
+  icon: {fileID: 21300000, guid: 13922a250c6dd9348a7683dda3a4e772, type: 3}
+  isNote: 0
+  noteContent: 
+  message: You have successfully added the Broken PCs

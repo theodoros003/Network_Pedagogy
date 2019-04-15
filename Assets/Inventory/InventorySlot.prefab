@@ -344,7 +344,11 @@ MonoBehaviour:
   interaction: {fileID: 0}
   rangeMessage: {fileID: 0}
   succMessage: {fileID: 0}
-  server: {fileID: 0}
+  WorkingServer: {fileID: 0}
+  BrokenServers: {fileID: 0}
+  WorkingPC: {fileID: 0}
+  BrokenPCs: {fileID: 0}
+  Wires: {fileID: 0}
 --- !u!222 &5644608159396791874
 CanvasRenderer:
   m_ObjectHideFlags: 0

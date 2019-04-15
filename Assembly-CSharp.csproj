@@ -53,7 +53,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Asset Packs\Lake\GrassRoadRace\Script\CameraMove.cs" />
+     <Compile Include="Assets\Asset Packs\Environment\Lake\GrassRoadRace\Script\CameraMove.cs" />
      <Compile Include="Assets\Asset Packs\More assets\BasicBandit\DemoSceneBasicBandit\Scripts\ButtonFunction.cs" />
      <Compile Include="Assets\Asset Packs\More assets\BasicBandit\DemoSceneBasicBandit\Scripts\MovementCamera.cs" />
      <Compile Include="Assets\Asset Packs\More assets\FloatingEntities\Scripts\BoatController.cs" />
@@ -163,7 +163,7 @@
      <None Include="Assets\Asset Packs\More assets\FloatingEntities\Shaders\WaterToolBox.cginc" />
      <None Include="Assets\Asset Packs\More assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\RadialBlur.shader" />
      <None Include="Assets\Asset Packs\More assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfFieldDX11.shader" />
-     <None Include="Assets\Asset Packs\Skies\SimpleSky\ReadMe.txt" />
+     <None Include="Assets\Asset Packs\Environment\Skies\SimpleSky\ReadMe.txt" />
      <None Include="Assets\Asset Packs\More assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\ContrastComposite.shader" />
      <None Include="Assets\Asset Packs\More assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAAPreset3.shader" />
      <None Include="Assets\Asset Packs\More assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\FisheyeShader.shader" />

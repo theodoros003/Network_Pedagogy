@@ -10,7 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3e884c8af2e55704880d1dd0e1382eb2, type: 3}
-  m_Name: WirelessRouter
+  m_Name: Working PC
   m_EditorClassIdentifier: 
-  name: WRouter
-  icon: {fileID: 21300000, guid: c61ceb460f8ca9a4a9c5ce150b5c690c, type: 3}
+  name: Working PC
+  icon: {fileID: 21300000, guid: 13922a250c6dd9348a7683dda3a4e772, type: 3}
+  isNote: 0
+  noteContent: 
+  message: You have successfully added the Working PC
