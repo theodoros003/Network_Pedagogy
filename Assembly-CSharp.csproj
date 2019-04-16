@@ -132,6 +132,7 @@
      <Compile Include="Assets\Scripts\Inventory\InventoryUI.cs" />
      <Compile Include="Assets\Scripts\Items\Item.cs" />
      <Compile Include="Assets\Scripts\Items\Loot.cs" />
+     <Compile Include="Assets\Scripts\MessageUI.cs" />
      <Compile Include="Assets\Scripts\Movement.cs" />
      <Compile Include="Assets\Scripts\MoveToPoint.cs" />
      <Compile Include="Assets\Scripts\PlayerCamera.cs" />

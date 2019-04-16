@@ -29,6 +29,8 @@ public class InventorySlot : MonoBehaviour
     public GameObject BrokenPCs;
     public GameObject Wires;
 
+    public GameObject canvas;
+    
     public void AddItem(Item newItem)
     {
         item = newItem;
@@ -74,7 +76,7 @@ public class InventorySlot : MonoBehaviour
         }
         if (item != null && item.isNote == false && inRange == false)
         {
-            StartCoroutine(outOfRangeMessage());
+            canvas.GetComponent<MessageUI>().startRangeMessage();
         }
     }
 
@@ -83,50 +85,43 @@ public class InventorySlot : MonoBehaviour
         if (item.name == "Working Server")
         {
             WorkingServer.SetActive(true);
-            StartCoroutine(succUseMessage());
+            succUseMessage();
             OnRemoveButton();
         }
         else if (item.name == "Broken Servers")
         {
             BrokenServers.SetActive(true);
-            StartCoroutine(succUseMessage());
+            succUseMessage();
             OnRemoveButton();
         }
         else if (item.name == "Working PC")
         {
             WorkingPC.SetActive(true);
-            StartCoroutine(succUseMessage());
+            succUseMessage();
             OnRemoveButton();
         }
         else if (item.name == "Broken PCs")
         {
             BrokenPCs.SetActive(true);
-            StartCoroutine(succUseMessage());
+            succUseMessage();
             OnRemoveButton();
         }
         else if (item.name == "Wires")
         {
             Wires.SetActive(true);
-            StartCoroutine(succUseMessage());
+            succUseMessage();
             OnRemoveButton();
         }
         
     }
 
-    IEnumerator outOfRangeMessage()
-    {
-        rangeMessage.SetActive(true);
-        yield return new WaitForSeconds(1);
-        rangeMessage.SetActive(false);
-    }
-    IEnumerator succUseMessage()
+    void succUseMessage()
     {
         item.Use();
         itemMessage = succMessage.GetComponent<Text>();
         itemMessage.text = item.message;
-        succMessage.SetActive(true);
-        yield return new WaitForSeconds(2);
-        succMessage.SetActive(false);
+        itemMessage = canvas.GetComponent<MessageUI>().succMessageTextInput;
+        canvas.GetComponent<MessageUI>().startSuccMessage();
     }
 
     void openNotes()
