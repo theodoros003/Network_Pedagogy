@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 1347643182}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -86,7 +86,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 6758190384287319469}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.3
+  m_Radius: 0.4
   m_Speed: 5.66
   m_Acceleration: 50
   avoidancePriority: 50
@@ -144,10 +144,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.3681524
-  m_Height: 1.6439916
+  m_Radius: 0.41328892
+  m_Height: 1.6739527
   m_Direction: 1
-  m_Center: {x: 0, y: -0.17800458, z: -0.028310265}
+  m_Center: {x: -0.013500904, y: -0.16302401, z: -0.04518902}
 --- !u!114 &1550484882
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -195,6 +195,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 328136589237339770}
     m_Modifications:
+    - target: {fileID: 100000, guid: 9ddea35ce836f644785979a765a4df7a, type: 3}
+      propertyPath: m_Name
+      value: Bag
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9ddea35ce836f644785979a765a4df7a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -250,10 +254,6 @@ PrefabInstance:
     - target: {fileID: 400000, guid: 9ddea35ce836f644785979a765a4df7a, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.30132768
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 9ddea35ce836f644785979a765a4df7a, type: 3}
-      propertyPath: m_Name
-      value: Bag
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 9ddea35ce836f644785979a765a4df7a, type: 3}
       propertyPath: m_Materials.Array.data[0]

@@ -13,10 +13,10 @@ public class InventorySlot : MonoBehaviour
     public GameObject notes;
     public GameObject noteText;
 
-    public float radius = 20f;
+    public float LabIntRadius = 20f;
     public bool inRange = false;
     public Transform player;
-    public Transform interaction;
+    public Transform LabInteraction;
 
     public GameObject rangeMessage;
     public GameObject succMessage = null;
@@ -56,8 +56,8 @@ public class InventorySlot : MonoBehaviour
 
     public void UseItem()
     {
-        float distance = Vector3.Distance(player.position, interaction.position);
-        if (distance <= radius)
+        float distance = Vector3.Distance(player.position, LabInteraction.position);
+        if (distance <= LabIntRadius)
         {
             inRange = true;
         }

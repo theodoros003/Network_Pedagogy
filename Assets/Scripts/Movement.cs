@@ -34,10 +34,6 @@ public class Movement : MonoBehaviour
         {
             GetComponent<Animator>().SetTrigger("Wave");
         }
-        if (Input.GetKey(KeyCode.F))
-        {
-            GetComponent<Animator>().SetTrigger("Pickup");
-        }
     }
 
     private void MoveToCursor()

@@ -8,6 +8,7 @@ public class MessageUI : MonoBehaviour
     public GameObject successMessage;
     private Text succMessageText;
     public Text succMessageTextInput;
+    public GameObject terminalMessage;
 
     public void startRangeMessage()
     {
