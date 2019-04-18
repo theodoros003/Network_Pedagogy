@@ -3,7 +3,7 @@
 public class Loot : Interractions
 {
     public Item item;
-    public GameObject playerAnimation;
+    GameObject playerAnimation;
 
     public override void Interact()
     {

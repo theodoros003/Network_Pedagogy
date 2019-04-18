@@ -136,6 +136,7 @@
      <Compile Include="Assets\Scripts\Movement.cs" />
      <Compile Include="Assets\Scripts\MoveToPoint.cs" />
      <Compile Include="Assets\Scripts\PlayerCamera.cs" />
+     <Compile Include="Assets\Scripts\ServerUI.cs" />
      <Compile Include="Assets\Scripts\TerminalCode.cs" />
      <Compile Include="Assets\Scripts\TerminalUI.cs" />
      <Compile Include="Assets\Scripts\TermTrigerMes.cs" />

@@ -4,8 +4,8 @@ using UnityEngine.UI;
 
 public class MessageUI : MonoBehaviour
 {
-    public GameObject rangeMessage;
-    public GameObject successMessage;
+    public GameObject RangeMessage;
+    public GameObject SuccessMessage;
     private Text succMessageText;
     public Text succMessageTextInput;
     public GameObject terminalMessage;
@@ -21,18 +21,18 @@ public class MessageUI : MonoBehaviour
 
     IEnumerator OutOfRangeMessage()
     {
-        rangeMessage.SetActive(true);
-        yield return new WaitForSeconds(1);
-        rangeMessage.SetActive(false);
+        RangeMessage.SetActive(true);
+        yield return new WaitForSeconds(2);
+        RangeMessage.SetActive(false);
     }
 
     IEnumerator SuccMessage()
     {
-        succMessageText = successMessage.GetComponent<Text>();
+        succMessageText = SuccessMessage.GetComponent<Text>();
         succMessageText = succMessageTextInput;
-        successMessage.SetActive(true);
+        SuccessMessage.SetActive(true);
         yield return new WaitForSeconds(2);
-        successMessage.SetActive(false);
+        SuccessMessage.SetActive(false);
     }
 
 }

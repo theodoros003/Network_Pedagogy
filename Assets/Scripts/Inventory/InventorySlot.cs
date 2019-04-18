@@ -18,7 +18,6 @@ public class InventorySlot : MonoBehaviour
     public Transform player;
     public Transform LabInteraction;
 
-    public GameObject rangeMessage;
     public GameObject succMessage = null;
     private Text itemMessage;
     private Text itemNote;
