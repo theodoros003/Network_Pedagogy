@@ -5,24 +5,43 @@ using UnityEngine;
 
 public class ServerUI : MonoBehaviour
 {
-
     public GameObject PowerCable;
+    public GameObject EthernetCable;
+    public GameObject GreenLight;
+
+    public bool isTrigger = false;
+    public bool powerIsOn = false;
+    public bool ethernetIsOn = false;
+    public bool serverIsComplete = false;
 
     void Start()
     {
-        
+        PowerCable.SetActive(false);
+        EthernetCable.SetActive(false);
+        GreenLight.SetActive(false);
     }
 
-    void Update()
+    void Update() 
     {
-        cableAnimation();
-    }
-
-    void cableAnimation()
-    {
-        if (Input.GetKeyDown("j"))
+        if (powerIsOn == true && ethernetIsOn == true)
         {
-            PowerCable.GetComponent<Animator>().Play("CableAnimation");
+            serverIsComplete = true;
+        }
+    }
+
+    void OnTriggerEnter(Collider other) 
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            isTrigger = true;
+        }
+    }
+
+    void OnTriggerExit(Collider other) 
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            isTrigger = false;
         }
     }
 }

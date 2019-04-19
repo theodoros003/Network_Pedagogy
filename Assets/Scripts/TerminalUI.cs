@@ -8,7 +8,7 @@ public class TerminalUI : MonoBehaviour
     
     void Start()
     {
-        Terminal.WriteLine("Oh you found me!");
+        Terminal.WriteLine("Congratuations you have internet access");
     }
 
     void Update()

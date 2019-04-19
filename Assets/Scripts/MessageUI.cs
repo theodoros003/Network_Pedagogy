@@ -9,6 +9,10 @@ public class MessageUI : MonoBehaviour
     private Text succMessageText;
     public Text succMessageTextInput;
     public GameObject terminalMessage;
+    public GameObject ServerMessage;
+    public GameObject ServerSuccMessage;
+    public GameObject EthernetMessage;
+    public GameObject EthernetSuccMessage;
 
     public void startRangeMessage()
     {
@@ -17,6 +21,22 @@ public class MessageUI : MonoBehaviour
     public void startSuccMessage()
     {
         StartCoroutine(SuccMessage());
+    }
+    public void startServerMessage()
+    {
+        StartCoroutine(ServerMess());
+    }
+    public void startServerSuccMessage()
+    {
+        StartCoroutine(ServerSuccessMessage());
+    }
+    public void startEthernetMessage()
+    {
+        StartCoroutine(EthernetMess());
+    }
+    public void startEthernetSuccMessage()
+    {
+        StartCoroutine(EthernetSuccMess());
     }
 
     IEnumerator OutOfRangeMessage()
@@ -33,6 +53,34 @@ public class MessageUI : MonoBehaviour
         SuccessMessage.SetActive(true);
         yield return new WaitForSeconds(2);
         SuccessMessage.SetActive(false);
+    }
+
+    IEnumerator ServerMess()
+    {
+        ServerMessage.SetActive(true);
+        yield return new WaitForSeconds(2);
+        ServerMessage.SetActive(false);
+    }
+
+    IEnumerator ServerSuccessMessage()
+    {
+        ServerSuccMessage.SetActive(true);
+        yield return new WaitForSeconds(3);
+        ServerSuccMessage.SetActive(false);
+    }
+
+    IEnumerator EthernetMess()
+    {
+        EthernetMessage.SetActive(true);
+        yield return new WaitForSeconds(2);
+        EthernetMessage.SetActive(false);
+    }
+
+    IEnumerator EthernetSuccMess()
+    {
+        EthernetSuccMessage.SetActive(true);
+        yield return new WaitForSeconds(3);
+        EthernetSuccMessage.SetActive(false);
     }
 
 }

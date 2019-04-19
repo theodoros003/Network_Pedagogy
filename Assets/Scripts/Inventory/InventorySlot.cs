@@ -81,37 +81,77 @@ public class InventorySlot : MonoBehaviour
 
     void insiteLab()
     {
-        if (item.name == "Working Server")
+        switch(item.name)
         {
-            WorkingServer.SetActive(true);
-            succUseMessage();
-            OnRemoveButton();
+            case "Working Server":
+                WorkingServer.SetActive(true);
+                succUseMessage();
+                OnRemoveButton();
+                break;
+            case "Broken Servers":
+                BrokenServers.SetActive(true);
+                succUseMessage();
+                OnRemoveButton();
+                break;
+            case "Working PC":
+                WorkingPC.SetActive(true);
+                succUseMessage();
+                OnRemoveButton();
+                break;
+            case "Broken PCs":
+                BrokenPCs.SetActive(true);
+                succUseMessage();
+                OnRemoveButton();
+                break;
+            case "Wires":
+                Wires.SetActive(true);
+                succUseMessage();
+                OnRemoveButton();
+                break;
+            case "Power Cable":
+                bool serverIsTrigger;
+                GameObject GreenLight;
+                GameObject PowerCable;
+
+                GreenLight = WorkingServer.GetComponent<ServerUI>().GreenLight;
+                serverIsTrigger = WorkingServer.GetComponent<ServerUI>().isTrigger;
+                PowerCable = WorkingServer.GetComponent<ServerUI>().PowerCable;
+
+                if (serverIsTrigger == false)
+                {
+                    canvas.GetComponent<MessageUI>().startServerMessage();
+                    //serverDistanceMessage.SetActive(true);
+                }
+                if (serverIsTrigger == true)
+                {
+                    canvas.GetComponent<MessageUI>().startServerSuccMessage();
+                    PowerCable.SetActive(true);
+                    PowerCable.GetComponent<Animator>().Play("CableAnimation");
+                    WorkingServer.GetComponent<ServerUI>().powerIsOn = true;
+                    GreenLight.SetActive(true);
+                    OnRemoveButton();
+                }
+                break;
+            case "Ethernet Cable":
+                GameObject ethernetCable;
+
+                serverIsTrigger = WorkingServer.GetComponent<ServerUI>().isTrigger;
+                ethernetCable = WorkingServer.GetComponent<ServerUI>().EthernetCable;
+
+                if (serverIsTrigger == false)
+                {
+                    canvas.GetComponent<MessageUI>().startEthernetMessage();
+                }
+                if (serverIsTrigger == true)
+                {
+                    canvas.GetComponent<MessageUI>().startEthernetSuccMessage();
+                    ethernetCable.SetActive(true);
+                    ethernetCable.GetComponent<Animator>().Play("EthernetCableAnimation");
+                    WorkingServer.GetComponent<ServerUI>().ethernetIsOn = true;
+                    OnRemoveButton();
+                }
+                break;
         }
-        else if (item.name == "Broken Servers")
-        {
-            BrokenServers.SetActive(true);
-            succUseMessage();
-            OnRemoveButton();
-        }
-        else if (item.name == "Working PC")
-        {
-            WorkingPC.SetActive(true);
-            succUseMessage();
-            OnRemoveButton();
-        }
-        else if (item.name == "Broken PCs")
-        {
-            BrokenPCs.SetActive(true);
-            succUseMessage();
-            OnRemoveButton();
-        }
-        else if (item.name == "Wires")
-        {
-            Wires.SetActive(true);
-            succUseMessage();
-            OnRemoveButton();
-        }
-        
     }
 
     void succUseMessage()

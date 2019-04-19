@@ -15,5 +15,14 @@ MonoBehaviour:
   name: Note 1
   icon: {fileID: 21300000, guid: b23f64ee3a410cb47ad57cc388b2bbb5, type: 3}
   isNote: 1
-  noteContent: hello
+  noteContent: "Where does the internet come from:\nThe internet comes from wires
+    burried in the ground or occasionally beamed to satellites or through cell phone
+    networks. In our case we are using the satellites to sent internet directly to
+    our servers\n\nWhy we need the Internet:\nBecause any devices that are connected
+    to the same wire of satelite can communicate with a server. Also, there are over
+    75 million servers in the world due 2016.\n\nWhat is a Server:\nA server is a
+    special computer connected directly to the internet and web pages are files on
+    that servers hard drive. Every server has a unique Internet Protocol address or
+    IP address. \n\nWhat is IP Address:\nIP addresses help computers find each other
+    and communicate using numbers like (72.14.205.100). "
   message: 

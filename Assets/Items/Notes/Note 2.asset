@@ -15,5 +15,16 @@ MonoBehaviour:
   name: Note 2
   icon: {fileID: 21300000, guid: b23f64ee3a410cb47ad57cc388b2bbb5, type: 3}
   isNote: 1
-  noteContent: hello again
+  noteContent: 'How to connect the pc to the internet:
+
+    Step 1: Connect the power cable and ethernet cable to the computer.
+
+
+    Step 2: Connect the same ethernet cable to the switch on the server.
+
+
+    Step 3: Plug in the power cable to the server.
+
+
+    Step 4: Use the computer.'
   message: 
